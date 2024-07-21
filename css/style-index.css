@@ -1,0 +1,240 @@
+body{
+    background-color: black;
+    margin: 1px;
+    padding: 1px;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: blue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: larger;
+}
+a:hover{
+    color: rgb(70, 70, 218);
+}
+header{
+    background-color: black;
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#logo{
+    width: 80px;
+    padding: 0;
+}
+.menu-prin{
+    display: flex;
+    text-align: center;
+    gap: 3rem;
+    padding: 1px;
+    margin-right: 5px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+}
+.menu-secun{
+    display: flex;
+    gap: 3rem;
+}
+.slider{
+width: 650px;
+margin: 50px auto;
+border: 3px solid rgb(231, 231, 218);
+overflow: hidden;
+box-shadow: 0 4px 8px;
+}
+.slides{
+    display: flex;
+    width: 300%;
+    animation-name: movimiento;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+.slide{
+    width: 650px;
+}
+.slide img{
+    width: 650px;
+    height: 250px;
+    display: block;
+}
+@keyframes movimiento{
+    0%{transform: translatex(0);}
+    100%{transform: translatex(-100%);}
+}
+.slider:hover{
+    transform: scale(110%);
+}
+#opcion-center{
+    justify-content: center;
+    display: flex;
+    gap: 4rem;
+}
+.opcion-center{
+    border: 2px solid white;
+    border-radius: 15px;
+    padding: 5px;
+}
+.opcion-center:hover{
+    background-color: rgb(16, 15, 15);
+}
+
+.grid-c{
+    display: flex;
+    justify-content: center;
+}
+.img-cate{
+    display: grid;
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+}
+.grid-cate{
+    display: flex;
+    gap: 1rem;
+}
+.grids-cate{
+    margin-top: 5px;
+    margin-bottom: 10px;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+}
+.grids-cate:hover{
+    background-color: gray;
+    transform: scale(105%);
+}
+footer {
+    border-top: 1px solid white;
+    background-color: #000000;
+    padding: 10px;
+    text-align: center;
+    }
+    .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    }
+    .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+.izquierda{
+    float: left;
+    margin-left: 5px;
+}
+.derecha{
+    float: right;
+    margin-right: 5px;
+}
+
+
+@media (max-width: 1050px) {
+    .grid-c{
+        display: flex;
+        justify-content: center;
+    }
+    .img-cate{
+        display: grid;
+        width: 150px;
+        height: 150px;
+        border-radius: 10px;
+    }
+    .grid-cate{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 4rem;
+    }
+    .grids-cate{
+        margin-top: 5px;
+        margin-bottom: 10px;
+        justify-content: center;
+        text-align: center;
+        padding: 5px;
+    }
+    
+
+}
+
+@media (max-width: 750px){
+    .slider{
+        width: 350px;
+        margin: 50px auto;
+        border: 3px solid rgb(231, 231, 218);
+        overflow: hidden;
+        box-shadow: 0 4px 8px;
+        }
+    .slide img{
+            width: 350px;
+            height: 250px;
+            display: block;
+        }
+    .grid-c{
+        display: flex;
+        justify-content: center;
+    }
+    .img-cate{
+        display: grid;
+        width: 200px;
+        height: 200px;
+        border-radius: 10px;
+    }
+    .grid-cate{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    .grids-cate{
+        margin-top: 5px;
+        margin-bottom: 5px;
+        justify-content: center;
+        text-align: center;
+        padding: 5px;
+    }
+    footer .container .content{
+        display: grid;
+        margin: auto;
+        text-align: center;
+        justify-content: center;
+
+    }
+    #opcion-center{
+        
+        display: flex;
+        margin: 15px;
+        margin-right: 5px;
+        gap: 1rem;
+    }
+    .opcion-center{
+        border: 2px solid white;
+        border-radius: 15px;
+        padding: 5px;
+
+    }
+    .menu-secun{
+        display: flex;
+        gap: 0.5rem;
+    }
+    .menu-secun a{
+        font-size: 10pt;
+        justify-content: center;
+        margin: auto;
+        text-align: center;
+        align-items: center;
+    }
+    .menu-prin{
+        display: flex;
+        text-align: center;
+        gap: 1rem;
+        padding: 1px;
+        margin-right: 5px;
+    }
+}

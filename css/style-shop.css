@@ -1,0 +1,228 @@
+body{
+    background-color: black;
+    margin: 1px;
+    padding: 1px;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: blue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: larger;
+}
+a:hover{
+    color: rgb(63, 63, 181);
+}
+header{
+    background-color: black;
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#logo{
+    width: 80px;
+    padding: 0;
+}
+.menu-prin{
+    display: flex;
+    text-align: center;
+    gap: 3rem;
+    padding: 1px;
+    margin-right: 5px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+}
+.menu-secun{
+    display: flex;
+    gap: 3rem;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+}
+.menu-secun{
+    display: flex;
+    gap: 3rem;
+}
+footer {
+    border-top: 1px solid white;
+    background-color: #000000;
+    padding: 10px;
+    text-align: center;
+    }
+    .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    }
+    .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+    a:hover{
+        color: rgb(63, 63, 181);
+    }
+
+
+    #todo{
+        background-color: black;
+        width: 100%;
+        height: 600px;
+        margin: 0 auto;
+    }
+    #izq{
+        background-color: rgb(37, 34, 34);
+        width: 200px;
+        height: 500px;
+        float: left;
+        display: grid;
+        border: 1px white solid;
+        justify-content: center;
+    }
+    #catee{
+        border: none;
+        margin: auto;
+        height: 30px;
+        font-size: 16pt;
+    }
+    #derecha{
+        width: 600px;
+        height: 120px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+    }
+    #bannersh{
+        width: 700px;
+        height: 120px;
+        border: 1px outset white;
+    }
+    #bannersh:hover{
+        transform: scale(110%);
+    }
+    .produc{
+        border: 1px solid blue;
+        border-radius: 10px;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 30px;
+        margin: auto;
+        padding: 1px;
+        text-align: center;
+    }
+    #pro{
+        background-color: black;
+        width: 1150px;
+        height: 480px;
+        float: inline-start;
+        margin-right: 20px;
+        margin-left: 25px;
+    }
+    #caso{
+        display: flex;
+        justify-content: center;
+        height: 150px;
+        margin-top: 50px;
+    }
+    .com{
+        border: 2px solid white;
+        border-style: double;
+        border-radius: 10px;
+        margin: auto;
+        margin-top: 5px;
+        padding: 2px;
+    }
+    .quefo{
+        width: 180px;
+        height: 125px;
+        margin-bottom: 1px;
+    }
+    #coso{
+        display: flex;
+        justify-content: center;
+        height: 150px;
+        margin-top: 50px;
+    }
+    .medi{
+        justify-content: center;
+        text-align: center;
+        width: 50%;
+        height: 190px;
+        margin: 10px;
+        padding: 0;
+    }
+    .medio{
+        display: block;
+        margin: auto;
+        margin-bottom: 5px;
+    }
+    .medi:hover{
+        transform: scale(105%);
+        background-color: #161414;
+    }
+
+@media (max-width: 1050px) {
+    #todo{
+        height: 700px;
+    }
+    #izq{
+        width: 150px;
+    }
+    .produc{
+        font-size: 12pt;
+    }
+    #derecha{
+        width: 600px;
+        height: 120px;
+        margin: auto;
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+    #bannersh{
+        width: 500px;
+        height: 120px;
+    }
+    .medi{
+        justify-content: center;
+        text-align: center;
+        width: 30%;
+        height: 190px;
+        margin: 10px;
+        padding: 0;
+    }
+    #coso{
+        display: flex;
+        justify-content: center;
+        width:  650px;
+        height: 150px;
+        margin-left: 275px;
+        margin-top: 50px;
+    }
+    #caso{
+        display: flex;
+        justify-content: center;
+        width: 650px;
+        height: 150px;
+        margin-left: 275px;
+        margin-top: 50px;
+    }
+    #pro{
+        display: contents;
+        margin: auto;
+        width: 100%;
+    }
+    footer{
+        overflow: auto;
+    }
+}
